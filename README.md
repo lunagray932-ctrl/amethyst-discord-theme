@@ -298,14 +298,14 @@ Found a purple/black box I missed? Discord updated and broke something? Have a f
 **Report Issues:**
 1. Press `Ctrl+Shift+I` → Inspect the element
 2. Copy the HTML (Right-click → Copy → Copy element)
-3. [Open a GitHub issue](https://github.com/YOUR-USERNAME/amethyst-discord-theme/issues) with:
+3. [Open a GitHub issue](https://github.com/lunagray932-ctrl/amethyst-discord-theme/issues) with:
    - Screenshot of the problem
    - HTML snippet
    - Your Discord version
 
 **Contact:**
 - **Email:** luna1324001@gmail.com
-- **GitHub Issues:** [Report a bug or request a feature](https://github.com/YOUR-USERNAME/amethyst-discord-theme/issues)
+- **GitHub Issues:** [Report a bug or request a feature](https://github.com/lunagray932-ctrl/amethyst-discord-theme/issues)
 
 I'll add fixes quickly! Usually within 24-48 hours.
 
