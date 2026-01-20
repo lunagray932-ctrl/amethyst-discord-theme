@@ -1,0 +1,573 @@
+/**
+ * @name Amethyst
+ * @description Elegant purple Discord theme with transparent UI, circular icons, and clean minimal design
+ * @author Your Name
+ * @version 1.0.0
+ * @source https://github.com/YOUR-USERNAME/amethyst-discord-theme
+ * @contact luna1324001@gmail.com
+ * @license MIT
+ */
+
+/* ===== Dark Color Variables ===== */
+.theme-dark, .theme-light, :root {
+    --background-base-lowest: #1C1C28 !important;
+    --background-base-lower: #1E1E2A !important;
+    --background-base-low: #21212D !important;
+    --chat-background: #1C1C28 !important;
+    --background-surface-high: #252537 !important;
+    --background-surface-higher: #2D2D3C !important;
+    --background-surface-highest: #35354A !important;
+    
+    --neutral-1: #FFFFFF !important;
+    --neutral-60: #35354A !important;
+    --neutral-62: #33334A !important;
+    --neutral-64: #31314A !important;
+    --neutral-66: #2F2F4A !important;
+    --neutral-69: #2D2D3C !important;
+    --neutral-73: #2A2A36 !important;
+    --neutral-78: #252537 !important;
+    --neutral-83: #21212D !important;
+    --neutral-87: #1E1E2A !important;
+    --neutral-91: #1C1C28 !important;
+    --neutral-95: #1A1A26 !important;
+    --neutral-97: #181824 !important;
+    --neutral-100: #1C1C28 !important;
+    
+    --brand-experiment: #7C3AED !important;
+    --brand-500: #7C3AED !important;
+    --brand-360: #7C3AED !important;
+    --blurple-50: #7C3AED !important;
+    
+    --background-primary: #1C1C28 !important;
+    --background-secondary: #252537 !important;
+    --background-secondary-alt: #2D2D3C !important;
+    --background-tertiary: #2D2D3C !important;
+    --background-accent: #7C3AED !important;
+    --background-floating: #35354A !important;
+    --channeltextarea-background: #2D2D3C !important;
+    --bg-surface-raised: #2D2D3C !important;
+    --bg-surface-overlay-tmp: #35354A !important;
+    --card-background-default: #252537 !important;
+    --card-primary-pressed-bg: #2D2D3C !important;
+    --card-secondary-bg: rgba(124, 58, 237, 0.08) !important;
+    
+    --background-mentioned-hover: rgba(124, 58, 237, 0.15) !important;
+    --background-mentioned: rgba(124, 58, 237, 0.08) !important;
+    --background-message-hover: rgba(124, 58, 237, 0.04) !important;
+    --background-modifier-hover: rgba(124, 58, 237, 0.08) !important;
+    --background-modifier-active: rgba(124, 58, 237, 0.12) !important;
+    --background-modifier-selected: rgba(124, 58, 237, 0.15) !important;
+    
+    --channels-default: #B5B5C8 !important;
+    --text-normal: #DCDDDE !important;
+    --text-muted: #A3A3B8 !important;
+}
+
+/* ===== Base Backgrounds ===== */
+html, body { background: #1C1C28 !important; }
+#app-mount { background: #1C1C28 !important; }
+._51fd70792ee2e563-appMount { background: #1C1C28 !important; }
+._5e434347c823b592-container { background: #1C1C28 !important; }
+[class*="chat_"], [class*="content_"] { background: #1C1C28 !important; }
+nav, aside, [class*="sidebar"] { background: #252537 !important; }
+
+/* ===== Server List ===== */
+[class*="guilds"] {
+    background: #21212D !important;
+}
+
+/* ===== CIRCULAR SERVER ICONS ===== */
+[class*="guilds"] img[class*="-icon"] {
+    border-radius: 50% !important;
+}
+
+[class*="guilds"] div[class*="-wrapper"] {
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+}
+
+[class*="guilds"] div[class*="-blobContainer"] svg {
+    border-radius: 50% !important;
+}
+
+[class*="guilds"] svg[class*="-svg"] {
+    border-radius: 50% !important;
+}
+
+[class*="guilds"] foreignObject {
+    border-radius: 50% !important;
+}
+
+/* Server icon hover */
+[class*="guilds"] div[class*="-wrapper"]:hover {
+    border-radius: 50% !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Badges */
+[class*="numberBadge"],
+[class*="badge"],
+div[class*="-numberBadge"] {
+    background: #7C3AED !important;
+}
+
+/* Server pill */
+[class*="pill"] span {
+    background: #7C3AED !important;
+    border-radius: 0 4px 4px 0 !important;
+}
+
+/* ===== Message Headers - Normal Size ===== */
+[class*="messageContent"] h1,
+[class*="messageContent"] h2,
+[class*="messageContent"] h3,
+[id*="message-content"] h1,
+[id*="message-content"] h2,
+[id*="message-content"] h3 {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    line-height: 1.375rem !important;
+    margin: 0 !important;
+    color: #DCDDDE !important;
+}
+
+[class*="messageContent"] h1 span,
+[class*="messageContent"] h2 span,
+[class*="messageContent"] h3 span {
+    font-size: inherit !important;
+    font-weight: inherit !important;
+}
+
+/* ===== Messages ===== */
+[class*="message_"] {
+    margin: 2px 0 !important;
+    background: transparent !important;
+    border-radius: 4px !important;
+    position: relative !important;
+    transition: all 0.2s ease !important;
+}
+
+[class*="message_"]::before {
+    content: "" !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 2px !important;
+    background: rgba(124, 58, 237, 0.2) !important;
+    border-radius: 2px !important;
+    transition: all 0.2s ease !important;
+}
+
+[class*="message_"]:hover {
+    background: rgba(124, 58, 237, 0.04) !important;
+}
+
+[class*="message_"]:hover::before {
+    background: rgba(124, 58, 237, 0.5) !important;
+}
+
+/* ===== DM Channels ===== */
+[class*="channel_"] {
+    border: none !important;
+    border-radius: 8px !important;
+    margin: 1px 4px !important;
+    background: transparent !important;
+    transition: all 0.2s ease !important;
+}
+
+[class*="channel_"]:hover {
+    background: rgba(124, 58, 237, 0.08) !important;
+}
+
+[class*="channel_"][class*="selected"] {
+    background: rgba(124, 58, 237, 0.12) !important;
+}
+
+/* ===== CLEAN ACTIVITY - NO PURPLE ===== */
+[class*="activity"],
+[class*="activityPanel"],
+[class*="nowPlaying"],
+[class*="userPanelInner"],
+[class*="container"][class*="themed"] {
+    background: transparent !important;
+}
+
+/* Activity elements - but NOT slider components */
+[class*="activity"] *:not([class*="slider"]):not([class*="track"]):not([class*="bar"]):not([class*="grabber"]),
+[class*="activityPanel"] *:not([class*="slider"]):not([class*="track"]):not([class*="bar"]):not([class*="grabber"]),
+[class*="nowPlaying"] *:not([class*="slider"]):not([class*="track"]):not([class*="bar"]):not([class*="grabber"]),
+[class*="userPanelInner"] *:not([class*="slider"]):not([class*="track"]):not([class*="bar"]):not([class*="grabber"]),
+[class*="container"][class*="themed"] *:not([class*="slider"]):not([class*="track"]):not([class*="bar"]):not([class*="grabber"]) {
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Activity text and elements - but NOT slider */
+[class*="activity"] [class*="text"]:not([class*="slider"]),
+[class*="activity"] [class*="details"]:not([class*="slider"]),
+[class*="activity"] span:not([class*="slider"]):not([class*="progress"]):not([class*="time"]),
+[class*="activity"] div:not([class*="slider"]):not([class*="track"]):not([class*="bar"]) {
+    background: transparent !important;
+}
+
+/* ===== ACTIVITY TAB (Top Right) - NO PURPLE ===== */
+[class*="_0f2e83213c878a13-cardRow"],
+[class*="_0f2e83213c878a13-infoSection"],
+[class*="_0f2e83213c878a13-userSection"] {
+    background: transparent !important;
+}
+
+[class*="_0f2e83213c878a13-cardRow"] *:not([class*="avatar"]):not(img),
+[class*="_0f2e83213c878a13-infoSection"] *:not([class*="avatar"]):not(img),
+[class*="_0f2e83213c878a13-userSection"] *:not([class*="avatar"]):not(img) {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+[class*="_0f2e83213c878a13-facePile"],
+[class*="_0f2e83213c878a13-thumbnail"],
+[class*="_42bf58529787eb7a-contentImage"],
+[class*="_635edac6e9713347-badgesContainer"] {
+    background: transparent !important;
+}
+
+[class*="_0f2e83213c878a13-userName"],
+[class*="_0f2e83213c878a13-contentTitle"] {
+    background: transparent !important;
+}
+
+/* ===== USER PROFILE POPOUTS - NO PURPLE/BLACK BOXES ===== */
+/* Profile containers */
+[class*="userPopout"],
+[class*="userProfile"],
+[class*="profileBadges"],
+[class*="profileBadge"],
+[class*="profile"],
+[class*="memberSince"],
+[class*="note"],
+[class*="role"],
+[class*="roles"] {
+    background: transparent !important;
+}
+
+/* EXACT badge classes from HTML */
+[class*="_8061a5f9dbf6d829-container"],
+[class*="_8061a5f9dbf6d829-badge"],
+div[class*="_8061a5f9dbf6d829"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Profile body/overlay classes */
+[class*="b32ca49f97332e1b-body"],
+[class*="b32ca49f97332e1b-overlay"],
+[class*="c0bea05627c5dc35-overlay"],
+[class*="bf424dc3dc4c8775-section"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* More aggressive badge targeting */
+[class*="profileBadges"] *,
+[class*="profileBadge"] *,
+[class*="badge"] div,
+[class*="badges"] div,
+[class*="Badge"],
+div[class*="badge"],
+svg[class*="badge"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* User info sections */
+[class*="userInfoSection"],
+[class*="userInfoText"],
+[class*="customStatus"],
+[class*="memberSince"],
+[class*="note"] {
+    background: transparent !important;
+}
+
+/* EXACT status class from HTML - remove black boxes */
+[class*="ab86098b36386ff7-statusText"],
+div[class*="ab86098b36386ff7-statusText"],
+[class*="ab86098b36386ff7-statusEmoji"],
+img[class*="ab86098b36386ff7-statusEmoji"],
+[class*="c9d15c8a962de3c8-emoji"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Status emoji containers */
+.emoji[class*="statusEmoji"],
+img.emoji {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Server tag badge/emoji - no purple boxes */
+[class*="_10651c5cfe637db6-badge"],
+img[class*="_10651c5cfe637db6-badge"],
+[class*="_10651c5cfe637db6-chipletContainerInner"],
+[class*="_10651c5cfe637db6-chipletContainerInline"],
+[class*="_63ed30c16c7151f2-guildTag"],
+span[class*="_63ed30c16c7151f2-guildTag"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Server tag text and badge containers */
+[class*="_10651c5cfe637db6-text"],
+[class*="_10651c5cfe637db6-tagText"],
+span[class*="_10651c5cfe637db6"] {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Custom status - remove all black boxes */
+[class*="customStatus"] *,
+[class*="customStatusText"],
+[class*="status"] span,
+[class*="statusText"],
+div[class*="customStatus"],
+div[class*="status"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Profile body elements */
+[class*="profileBody"] *:not(img):not([class*="avatar"]),
+[class*="popoutBody"] *:not(img):not([class*="avatar"]) {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Remove all backgrounds from badge/status containers */
+[aria-label*="Badge"],
+[aria-label*="badge"],
+[aria-label*="User Badges"] {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* ===== BOTTOM PANEL - NO PURPLE BOXES ===== */
+[class*="panels"],
+[class*="container_"][class*="withTag"],
+section[class*="panels"] {
+    background: #252537 !important;
+}
+
+[class*="panels"] *,
+[class*="container_"][class*="withTag"] *,
+[class*="actionButtons"] *,
+[class*="buttonContainer"] * {
+    box-shadow: none !important;
+    filter: none !important;
+}
+
+/* ===== ACTION BUTTONS (Camera, Screen Share, etc.) - NO PURPLE ===== */
+[class*="e131a99484292a19-actionButtons"],
+[class*="e131a99484292a19-button"] {
+    background: transparent !important;
+}
+
+[class*="e131a99484292a19-actionButtons"] button,
+[class*="e131a99484292a19-button"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+[class*="e131a99484292a19-actionButtons"] button:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* ===== VOICE CONTROL BUTTONS - NO PURPLE BOXES ===== */
+button[class*="_67645e1530f1195d-button"],
+button[class*="_201d5e8a3c09670a"],
+[class*="e131a99484292a19-voiceButtonsContainer"] button,
+[class*="panels"] button[class*="lookBlank"],
+button[aria-label*="Noise"],
+button[aria-label*="Disconnect"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    filter: none !important;
+}
+
+button[class*="_67645e1530f1195d-button"]:hover,
+button[aria-label*="Noise"]:hover,
+button[aria-label*="Disconnect"]:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Mute/Deafen/Settings buttons */
+[class*="button"][aria-label*="Mute"],
+[class*="button"][aria-label*="Deafen"],
+[class*="button"][aria-label*="User Settings"],
+button[aria-label*="Mute"],
+button[aria-label*="Deafen"],
+button[aria-label*="User Settings"],
+[class*="redGlow"],
+[class*="greenGlow"],
+[class*="plateMuted"],
+[class*="plated"],
+[class*="lookBlank"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    filter: none !important;
+}
+
+/* ===== TYPE BAR BUTTONS - KEEP ICONS VISIBLE ===== */
+[class*="_740174f3d6a2c8fe-buttons"],
+[class*="_740174f3d6a2c8fe-buttonContainer"] {
+    background: transparent !important;
+}
+
+[class*="_740174f3d6a2c8fe-button"],
+[class*="_24af7f4d0326ba4f-button"],
+button[class*="_740174f3d6a2c8fe-button"],
+button[class*="_24af7f4d0326ba4f-button"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+[class*="_740174f3d6a2c8fe-buttons"] svg,
+[class*="_740174f3d6a2c8fe-buttonContainer"] svg,
+[class*="_740174f3d6a2c8fe-button"] svg,
+[class*="_24af7f4d0326ba4f-button"] svg,
+button[class*="_740174f3d6a2c8fe-button"] svg,
+button[class*="_24af7f4d0326ba4f-button"] svg {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    color: #B5B5C8 !important;
+    fill: currentColor !important;
+}
+
+[class*="_740174f3d6a2c8fe-button"] svg path,
+[class*="_24af7f4d0326ba4f-button"] svg path {
+    fill: currentColor !important;
+}
+
+[class*="_740174f3d6a2c8fe-button"]:hover,
+[class*="_24af7f4d0326ba4f-button"]:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+[class*="_740174f3d6a2c8fe-button"]:hover svg,
+[class*="_24af7f4d0326ba4f-button"]:hover svg {
+    color: #DCDDDE !important;
+}
+
+/* ===== INPUT BAR - NO LAYOUT CHANGES ===== */
+/* Only style the inner container background */
+[class*="channelTextArea"] [class*="inner"] {
+    background: #2D2D3C !important;
+    border-radius: 8px !important;
+}
+
+/* ===== MUSIC PLAYER SLIDER - SHOW PURPLE PROGRESS ===== */
+/* Don't override the track or bar structure - let Discord handle it */
+
+/* ===== SCROLLBAR - NO PURPLE IN SERVER LIST ===== */
+::-webkit-scrollbar {
+    width: 12px !important;
+}
+
+/* Default purple scrollbar for most areas */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #7C3AED, #6D28D9) !important;
+    border-radius: 8px !important;
+    border: 2px solid #252537 !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #8B5CF6, #7C3AED) !important;
+}
+
+::-webkit-scrollbar-track {
+    background: #252537 !important;
+}
+
+/* Aggressive fix for server list - NO PURPLE */
+[class*="scroller"] ::-webkit-scrollbar-thumb,
+[class*="guilds"] ::-webkit-scrollbar-thumb,
+nav ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 2px solid #21212D !important;
+}
+
+[class*="scroller"] ::-webkit-scrollbar-thumb:hover,
+[class*="guilds"] ::-webkit-scrollbar-thumb:hover,
+nav ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25) !important;
+}
+
+/* ===== Selection ===== */
+::selection {
+    background: #7C3AED !important;
+    color: white !important;
+}
+
+/* ===== Links ===== */
+a {
+    color: #A78BFA !important;
+}
+
+a:hover {
+    color: #C4B5FD !important;
+}
+
+/* ===== Avatars ===== */
+[class*="avatar"] img {
+    border-radius: 50% !important;
+}
+
+/* ===== Buttons ===== */
+[class*="button"] {
+    border-radius: 8px !important;
+}
+
+/* Only color actual brand buttons */
+[class*="button"][class*="colorBrand"]:not([class*="plated"]):not([class*="lookBlank"]):not([class*="lookFilled"]) {
+    background: #7C3AED !important;
+}
+
+[class*="button"][class*="colorBrand"]:not([class*="plated"]):not([class*="lookBlank"]):not([class*="lookFilled"]):hover {
+    background: #8B5CF6 !important;
+}
+
+/* ===== Modals ===== */
+[class*="modal"],
+[class*="popout"] {
+    background: #252537 !important;
+    border-radius: 12px !important;
+}
+
+/* ===== Status Indicators ===== */
+[class*="status"] {
+    border: 2px solid #1C1C28 !important;
+}

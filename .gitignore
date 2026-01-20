@@ -1,0 +1,26 @@
+# Development files
+.qodo/
+*.txt
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Old versions (keep only current and stable backup)
+Purple-Clean-v[0-9]*.theme.css
+!Purple-Clean-v31.theme.css
+!Purple-NoZoom-v15.theme.css
