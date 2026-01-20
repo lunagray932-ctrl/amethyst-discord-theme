@@ -5,7 +5,10 @@ An elegant purple Discord theme with clean, transparent UI elements. Named after
 ## 📸 Preview
 
 ### Video Demo
+
+
 https://github.com/lunagray932-ctrl/amethyst-discord-theme/assets/253847913/Screen-Recording.mp4
+
 
 ### Screenshots
 ![Amethyst Theme Preview 1](Screenshot%202026-01-20%20220146.png)
