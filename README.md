@@ -2,6 +2,15 @@
 
 An elegant purple Discord theme with clean, transparent UI elements. Named after the beautiful purple gemstone, Amethyst brings a premium, minimal aesthetic to Discord without distracting effects.
 
+## 📸 Preview
+
+### Video Demo
+https://github.com/lunagray932-ctrl/amethyst-discord-theme/assets/253847913/Screen-Recording.mp4
+
+### Screenshots
+![Amethyst Theme Preview 1](Screenshot%202026-01-20%20220146.png)
+![Amethyst Theme Preview 2](Screenshot%202026-01-20%20221023.png)
+
 ## ✨ Features
 
 - **Circular Server Icons** - Smooth circular server icons with hover animations
