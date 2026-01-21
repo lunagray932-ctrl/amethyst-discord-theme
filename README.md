@@ -2,6 +2,10 @@
 
 An elegant purple Discord theme with clean, transparent UI elements. Named after the beautiful purple gemstone, Amethyst brings a premium, minimal aesthetic to Discord without distracting effects.
 
+## ⚡ Performance Update (v1.1.0)
+
+**Major performance improvements!** This version has been heavily optimized to eliminate input lag and improve responsiveness. If you experience any issues with typing lag, scrolling, or folder performance, please email me at **luna1324001@gmail.com** and I'll fix it immediately.
+
 ## 📸 Preview
 
 ### Video Demo
@@ -283,7 +287,15 @@ If reversed, Discord may have changed class names. Open an issue!
 
 ## 🔄 Version History
 
-### v1.0.0 "Amethyst" (Current - January 2026)
+### v1.1.0 "Performance" (Current - January 2026)
+- ⚡ **Major performance optimization** - removed expensive CSS selectors
+- ⚡ Eliminated input lag during typing
+- ⚡ Improved folder opening speed
+- ⚡ Smoother scrolling in member lists
+- ✅ All visual features preserved
+- ✅ Fixed activity badge purple circles
+
+### v1.0.0 "Amethyst" (January 2026)
 - ✅ Rebranded as Amethyst - elegant purple gemstone theme
 - ✅ Fixed server tag badge/emoji purple boxes
 - ✅ Fixed custom status emoji black boxes
