@@ -2,7 +2,7 @@
  * @name Amethyst
  * @description Elegant purple Discord theme with transparent UI, circular icons, and clean minimal design
  * @author lunagray932-ctrl
- * @version 1.0.0
+ * @version 1.0.1
  * @source https://github.com/lunagray932-ctrl/amethyst-discord-theme
  * @contact luna1324001@gmail.com
  * @license MIT
@@ -83,7 +83,7 @@ nav, aside, [class*="sidebar"] { background: #252537 !important; }
 
 [class*="guilds"] div[class*="-wrapper"] {
     border-radius: 50% !important;
-    transition: all 0.3s ease !important;
+    transition: transform 0.2s ease !important;
 }
 
 [class*="guilds"] div[class*="-blobContainer"] svg {
@@ -144,7 +144,6 @@ div[class*="-numberBadge"] {
     background: transparent !important;
     border-radius: 4px !important;
     position: relative !important;
-    transition: all 0.2s ease !important;
 }
 
 [class*="message_"]::before {
@@ -156,7 +155,6 @@ div[class*="-numberBadge"] {
     width: 2px !important;
     background: rgba(124, 58, 237, 0.2) !important;
     border-radius: 2px !important;
-    transition: all 0.2s ease !important;
 }
 
 [class*="message_"]:hover {
@@ -173,7 +171,6 @@ div[class*="-numberBadge"] {
     border-radius: 8px !important;
     margin: 1px 4px !important;
     background: transparent !important;
-    transition: all 0.2s ease !important;
 }
 
 [class*="channel_"]:hover {
