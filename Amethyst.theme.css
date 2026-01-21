@@ -2,7 +2,7 @@
  * @name Amethyst
  * @description Elegant purple Discord theme with transparent UI, circular icons, and clean minimal design
  * @author lunagray932-ctrl
- * @version 1.0.2
+ * @version 1.0.3
  * @source https://github.com/lunagray932-ctrl/amethyst-discord-theme
  * @contact luna1324001@gmail.com
  * @license MIT
@@ -183,39 +183,11 @@ div[class*="-numberBadge"] {
     background: transparent !important;
 }
 
-/* Activity elements - but NOT slider components */
-[class*="activity"] *:not([class*="slider"]):not([class*="track"]):not([class*="bar"]):not([class*="grabber"]),
-[class*="activityPanel"] *:not([class*="slider"]):not([class*="track"]):not([class*="bar"]):not([class*="grabber"]),
-[class*="nowPlaying"] *:not([class*="slider"]):not([class*="track"]):not([class*="bar"]):not([class*="grabber"]),
-[class*="userPanelInner"] *:not([class*="slider"]):not([class*="track"]):not([class*="bar"]):not([class*="grabber"]),
-[class*="container"][class*="themed"] *:not([class*="slider"]):not([class*="track"]):not([class*="bar"]):not([class*="grabber"]) {
-    background-color: transparent !important;
-    background-image: none !important;
-    box-shadow: none !important;
-    border: none !important;
-}
-
-/* Activity text and elements - but NOT slider */
-[class*="activity"] [class*="text"]:not([class*="slider"]),
-[class*="activity"] [class*="details"]:not([class*="slider"]),
-[class*="activity"] span:not([class*="slider"]):not([class*="progress"]):not([class*="time"]),
-[class*="activity"] div:not([class*="slider"]):not([class*="track"]):not([class*="bar"]) {
-    background: transparent !important;
-}
-
 /* ===== ACTIVITY TAB (Top Right) - NO PURPLE ===== */
 [class*="_0f2e83213c878a13-cardRow"],
 [class*="_0f2e83213c878a13-infoSection"],
 [class*="_0f2e83213c878a13-userSection"] {
     background: transparent !important;
-}
-
-[class*="_0f2e83213c878a13-cardRow"] *:not([class*="avatar"]):not(img),
-[class*="_0f2e83213c878a13-infoSection"] *:not([class*="avatar"]):not(img),
-[class*="_0f2e83213c878a13-userSection"] *:not([class*="avatar"]):not(img) {
-    background: transparent !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
 }
 
 [class*="_0f2e83213c878a13-facePile"],
@@ -342,8 +314,8 @@ div[class*="status"] {
 }
 
 /* Profile body elements */
-[class*="profileBody"] *:not(img):not([class*="avatar"]),
-[class*="popoutBody"] *:not(img):not([class*="avatar"]) {
+[class*="profileBody"],
+[class*="popoutBody"] {
     background-color: transparent !important;
     box-shadow: none !important;
 }
