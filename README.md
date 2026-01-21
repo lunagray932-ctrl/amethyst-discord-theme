@@ -285,6 +285,15 @@ If reversed, Discord may have changed class names. Open an issue!
 - **`QUICK-START.md`** - Fast installation guide
 - **`CUSTOMIZATION-EXAMPLES.md`** - Advanced customization examples
 
+## ⚠️ Known Issues
+
+Currently tracking these minor issues:
+
+- **Message hover effects removed** - Sacrificed for performance optimization (v1.1.0). If you prefer the hover effects over speed, use v1.0.0 from releases.
+- **Discord class changes** - Discord occasionally updates their CSS class names, which may temporarily break specific styling. Report via [GitHub Issues](https://github.com/lunagray932-ctrl/amethyst-discord-theme/issues) or email luna1324001@gmail.com.
+
+*No major bugs currently known. Theme tested on Discord Stable (January 2026).*
+
 ## 🔄 Version History
 
 ### v1.1.0 "Performance" (Current - January 2026)
