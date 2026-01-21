@@ -2,7 +2,7 @@
  * @name Amethyst
  * @description Elegant purple Discord theme with transparent UI, circular icons, and clean minimal design
  * @author lunagray932-ctrl
- * @version 1.0.3
+ * @version 1.1.0
  * @source https://github.com/lunagray932-ctrl/amethyst-discord-theme
  * @contact luna1324001@gmail.com
  * @license MIT
@@ -131,32 +131,7 @@ div[class*="-numberBadge"] {
     font-weight: inherit !important;
 }
 
-/* ===== Messages ===== */
-[class*="message_"] {
-    margin: 2px 0 !important;
-    background: transparent !important;
-    border-radius: 4px !important;
-    position: relative !important;
-}
-
-[class*="message_"]::before {
-    content: "" !important;
-    position: absolute !important;
-    left: 0 !important;
-    top: 0 !important;
-    bottom: 0 !important;
-    width: 2px !important;
-    background: rgba(124, 58, 237, 0.2) !important;
-    border-radius: 2px !important;
-}
-
-[class*="message_"]:hover {
-    background: rgba(124, 58, 237, 0.04) !important;
-}
-
-[class*="message_"]:hover::before {
-    background: rgba(124, 58, 237, 0.5) !important;
-}
+/* ===== Messages (removed for performance) ===== */
 
 /* ===== DM Channels ===== */
 [class*="channel_"] {
@@ -193,8 +168,12 @@ div[class*="-numberBadge"] {
 [class*="_0f2e83213c878a13-facePile"],
 [class*="_0f2e83213c878a13-thumbnail"],
 [class*="_42bf58529787eb7a-contentImage"],
-[class*="_635edac6e9713347-badgesContainer"] {
+[class*="_635edac6e9713347-badgesContainer"],
+[class*="_635edac6e9713347-badgeContainer"] {
     background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 [class*="_0f2e83213c878a13-userName"],
@@ -237,14 +216,9 @@ div[class*="_8061a5f9dbf6d829"] {
     box-shadow: none !important;
 }
 
-/* More aggressive badge targeting */
-[class*="profileBadges"] *,
-[class*="profileBadge"] *,
-[class*="badge"] div,
-[class*="badges"] div,
-[class*="Badge"],
-div[class*="badge"],
-svg[class*="badge"] {
+/* Simplified badge targeting */
+[class*="profileBadges"],
+[class*="profileBadge"] {
     background: transparent !important;
     background-color: transparent !important;
     background-image: none !important;
@@ -301,13 +275,10 @@ span[class*="_10651c5cfe637db6"] {
     background-color: transparent !important;
 }
 
-/* Custom status - remove all black boxes */
-[class*="customStatus"] *,
+/* Custom status - remove black boxes */
+[class*="customStatus"],
 [class*="customStatusText"],
-[class*="status"] span,
-[class*="statusText"],
-div[class*="customStatus"],
-div[class*="status"] {
+[class*="statusText"] {
     background: transparent !important;
     background-color: transparent !important;
     box-shadow: none !important;
@@ -333,12 +304,6 @@ div[class*="status"] {
 [class*="container_"][class*="withTag"],
 section[class*="panels"] {
     background: #252537 !important;
-}
-
-[class*="panels"] *,
-[class*="container_"][class*="withTag"] *,
-[class*="actionButtons"] *,
-[class*="buttonContainer"] * {
     box-shadow: none !important;
     filter: none !important;
 }
