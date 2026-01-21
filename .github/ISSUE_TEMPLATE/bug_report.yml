@@ -1,0 +1,67 @@
+name: 🐛 Bug Report
+description: Report a bug or issue with the theme
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Fill out the form below.
+        
+  - type: input
+    id: discord-version
+    attributes:
+      label: Discord Version
+      description: What version of Discord are you using?
+      placeholder: "Stable, PTB, Canary"
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: mod-type
+    attributes:
+      label: Discord Mod
+      description: Which mod are you using?
+      options:
+        - Vencord
+        - BetterDiscord
+    validations:
+      required: true
+      
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: What's the issue? Be specific!
+      placeholder: "Purple boxes appearing on profile badges..."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: How can I see this bug?
+      placeholder: |
+        1. Open user profile
+        2. Look at badges
+        3. See purple boxes
+    validations:
+      required: true
+      
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen instead?
+      placeholder: "Badges should have transparent backgrounds"
+    validations:
+      required: false
+      
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Add screenshots if possible (drag and drop images here)
+    validations:
+      required: false

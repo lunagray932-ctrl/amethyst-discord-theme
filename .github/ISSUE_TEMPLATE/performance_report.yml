@@ -1,0 +1,68 @@
+name: ⚡ Performance Issue
+description: Report lag, slowdowns, or performance problems
+title: "[Performance]: "
+labels: ["performance"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Performance issues are a priority! Help me identify the problem.
+        
+  - type: dropdown
+    id: theme-version
+    attributes:
+      label: Theme Version
+      description: Which version are you using?
+      options:
+        - v1.1.0 (Latest)
+        - v1.0.0
+        - Other (specify below)
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: mod-type
+    attributes:
+      label: Discord Mod
+      description: Which mod are you using?
+      options:
+        - Vencord
+        - BetterDiscord
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: symptoms
+    attributes:
+      label: Performance Symptoms
+      description: What lag are you experiencing? (Check all that apply)
+      options:
+        - label: Typing lag / input delay
+        - label: Slow folder opening
+        - label: Scrolling lag
+        - label: UI freezing
+        - label: High CPU usage
+        - label: Other (describe below)
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Detailed Description
+      description: When does the lag occur? How bad is it?
+      placeholder: "Every time I type in chat, there's a 500ms delay before letters appear"
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: without-theme
+    attributes:
+      label: Without Theme?
+      description: Have you tested Discord with the theme disabled?
+      options:
+        - "Yes - it's fast without the theme"
+        - "Yes - still slow without the theme"
+        - "No - haven't tested yet"
+    validations:
+      required: true
