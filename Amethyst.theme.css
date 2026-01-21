@@ -2,7 +2,7 @@
  * @name Amethyst
  * @description Elegant purple Discord theme with transparent UI, circular icons, and clean minimal design
  * @author lunagray932-ctrl
- * @version 1.0.1
+ * @version 1.0.2
  * @source https://github.com/lunagray932-ctrl/amethyst-discord-theme
  * @contact luna1324001@gmail.com
  * @license MIT
@@ -83,7 +83,6 @@ nav, aside, [class*="sidebar"] { background: #252537 !important; }
 
 [class*="guilds"] div[class*="-wrapper"] {
     border-radius: 50% !important;
-    transition: transform 0.2s ease !important;
 }
 
 [class*="guilds"] div[class*="-blobContainer"] svg {
@@ -96,12 +95,6 @@ nav, aside, [class*="sidebar"] { background: #252537 !important; }
 
 [class*="guilds"] foreignObject {
     border-radius: 50% !important;
-}
-
-/* Server icon hover */
-[class*="guilds"] div[class*="-wrapper"]:hover {
-    border-radius: 50% !important;
-    transform: translateY(-2px) !important;
 }
 
 /* Badges */
@@ -494,32 +487,28 @@ button[class*="_24af7f4d0326ba4f-button"] svg {
     width: 12px !important;
 }
 
-/* Default purple scrollbar for most areas */
+/* Default purple scrollbar for most areas - solid color for performance */
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #7C3AED, #6D28D9) !important;
+    background: #7C3AED !important;
     border-radius: 8px !important;
     border: 2px solid #252537 !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, #8B5CF6, #7C3AED) !important;
+    background: #8B5CF6 !important;
 }
 
 ::-webkit-scrollbar-track {
     background: #252537 !important;
 }
 
-/* Aggressive fix for server list - NO PURPLE */
-[class*="scroller"] ::-webkit-scrollbar-thumb,
-[class*="guilds"] ::-webkit-scrollbar-thumb,
-nav ::-webkit-scrollbar-thumb {
+/* Server list scrollbar - gray for visibility */
+[class*="guilds"] ::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.15) !important;
     border: 2px solid #21212D !important;
 }
 
-[class*="scroller"] ::-webkit-scrollbar-thumb:hover,
-[class*="guilds"] ::-webkit-scrollbar-thumb:hover,
-nav ::-webkit-scrollbar-thumb:hover {
+[class*="guilds"] ::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.25) !important;
 }
 
