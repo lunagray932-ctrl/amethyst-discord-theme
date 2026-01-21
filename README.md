@@ -1,5 +1,10 @@
 # Amethyst - Discord Theme
 
+![Version](https://img.shields.io/badge/version-1.1.0-purple?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
+![Discord](https://img.shields.io/badge/discord-theme-7C3AED?style=flat-square)
+![Platform](https://img.shields.io/badge/platform-Vencord%20%7C%20BetterDiscord-blueviolet?style=flat-square)
+
 An elegant purple Discord theme with clean, transparent UI elements. Named after the beautiful purple gemstone, Amethyst brings a premium, minimal aesthetic to Discord without distracting effects.
 
 ## ⚡ Performance Update (v1.1.0)
@@ -277,6 +282,29 @@ The theme doesn't force music player styling - it lets Discord handle it natural
 - **Server list** (left sidebar) should have gray scrollbar
 
 If reversed, Discord may have changed class names. Open an issue!
+
+## ❓ FAQ
+
+### Can I use this with both Vencord AND BetterDiscord?
+No - you can only use one mod at a time. Choose either Vencord (recommended) or BetterDiscord.
+
+### Will this theme break with Discord updates?
+Discord themes use CSS which occasionally needs updating when Discord changes their interface. I monitor for breaks and push fixes quickly (usually within 24-48 hours).
+
+### Does this slow down Discord?
+v1.1.0 is optimized for performance. If you experience lag, email luna1324001@gmail.com - performance issues are top priority.
+
+### Can I customize the purple color?
+Yes! See the [Customization](#-customization) section. Just replace `#7C3AED` with your preferred color in the theme file.
+
+### Is this safe to use?
+Yes. Themes only change appearance (CSS). They can't access your messages, passwords, or personal data. Both Vencord and BetterDiscord are widely used and safe.
+
+### How do I uninstall?
+Just disable the theme in your mod's settings, or delete the `.theme.css` file from your themes folder. Press `Ctrl+R` to refresh Discord.
+
+### Can I share/modify this theme?
+Absolutely! It's MIT licensed - free to use, modify, and redistribute. No attribution required (but appreciated!).
 
 ## 📦 Files Included
 
