@@ -169,7 +169,8 @@ div[class*="-numberBadge"] {
 [class*="_0f2e83213c878a13-thumbnail"],
 [class*="_42bf58529787eb7a-contentImage"],
 [class*="_635edac6e9713347-badgesContainer"],
-[class*="_635edac6e9713347-badgeContainer"] {
+[class*="_635edac6e9713347-badgeContainer"],
+[class*="_635edac6e9713347-badgeLabel"] {
     background: transparent !important;
     background-color: transparent !important;
     border: none !important;
