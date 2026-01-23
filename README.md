@@ -5,6 +5,8 @@
 ![Discord](https://img.shields.io/badge/discord-theme-7C3AED?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-Vencord%20%7C%20BetterDiscord-blueviolet?style=flat-square)
 
+> **⚠️ KNOWN ISSUE:** Black boxes have reappeared on some UI elements after a recent Discord update. I'm aware of the issue and working on a fix. Thank you for your patience!
+
 An elegant purple Discord theme with clean, transparent UI elements. Named after the beautiful purple gemstone, Amethyst brings a premium, minimal aesthetic to Discord without distracting effects.
 
 ## ⚡ Performance Update (v1.1.0)
