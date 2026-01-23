@@ -1,6 +1,6 @@
 /**
- * @name Amethyst V65
- * @description Elegant purple Discord theme with transparent UI, circular icons, and clean minimal design - Shows role colors on member names
+ * @name Amethyst WhiteText
+ * @description Elegant purple Discord theme with transparent UI, circular icons, and clean minimal design - PURE WHITE TEXT VARIANT (All member names forced to white, ignores role colors)
  * @author lunagray932-ctrl
  * @version 2.0.0
  * @source https://github.com/lunagray932-ctrl/amethyst-discord-theme
@@ -367,10 +367,13 @@ span.usernameGlow_e5de78 {
     background: none !important;
     background-color: rgba(0,0,0,0) !important;
     box-shadow: none !important;
-    /* Don't override color - let Discord's role colors work */
+    /* Allow role colors to show - don't force white */
+    color: unset !important;
     background-image: none !important;
     filter: none !important;
     text-shadow: none !important;
+    /* Prevent transparent text but allow role colors */
+    -webkit-text-fill-color: unset !important;
 }
 
 /* Remove nameplate backgrounds */
@@ -597,13 +600,13 @@ a:hover {
     border: 2px solid #1C1C28 !important;
 }
 /* ===== MEMBER LIST NAME FIX ===== */
-/* Override -webkit-text-fill-color: transparent but allow role colors */
+/* Force override -webkit-text-fill-color: transparent that's hiding names */
 .userList__60ded .member__2qe9d [class*="name"],
 .members__01cce [class*="name"],
 [role="listitem"] [class*="name"],
 .member__2qe9d {
-    /* Prevent transparent but don't force a specific color - let role colors work */
-    -webkit-text-fill-color: currentColor !important;
+    -webkit-text-fill-color: var(--text-normal) !important;
+    color: var(--text-normal) !important;
     -webkit-text-stroke: 0 !important;
     text-shadow: none !important;
 }
@@ -615,7 +618,9 @@ div.name__20a53,
 span.name__703b9,
 .userList__60ded .member__2qe9d .name__703b9,
 .members__01cce .member__2qe9d .name__703b9 {
-    /* Don't override color at all - let Discord's role colors work */
+    /* Allow role colors to show through - don't force white */
+    -webkit-text-fill-color: revert !important;
+    color: revert !important;
     opacity: 1 !important;
     visibility: visible !important;
 }
