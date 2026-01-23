@@ -40,12 +40,12 @@ https://github.com/user-attachments/assets/ecd37c2e-8734-4f6f-995e-6a9e26083bc1
 
 ### Choose Your Variant
 
-**Amethyst-V65.theme.css** (Recommended)
+**Amethyst.theme.css** (Recommended)
 - Shows Discord role colors on member names (pink, blue, green, etc.)
 - Better for servers with colored role hierarchy
 - [Download here](https://github.com/lunagray932-ctrl/amethyst-discord-theme/releases/latest)
 
-**Amethyst-V65-WhiteText.theme.css**
+**Amethyst-WhiteText.theme.css**
 - Forces all member names to pure white
 - Cleaner, more uniform appearance
 - Good if you prefer consistency over role colors
