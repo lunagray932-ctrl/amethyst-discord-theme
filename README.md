@@ -9,10 +9,6 @@
 
 An elegant purple Discord theme with clean, transparent UI elements. Named after the beautiful purple gemstone, Amethyst brings a premium, minimal aesthetic to Discord without distracting effects.
 
-## ⚡ Performance Update (v1.1.0)
-
-**Major performance improvements!** This version has been heavily optimized to eliminate input lag and improve responsiveness. If you experience any issues with typing lag, scrolling, or folder performance, please email me at **luna1324001@gmail.com** and I'll fix it immediately.
-
 ## 📸 Preview
 
 ### Video Demo
@@ -323,23 +319,31 @@ Absolutely! It's MIT licensed - free to use, modify, and redistribute. No attrib
 
 ## 📦 Files Included
 
-- **`Amethyst.theme.css`** - Current version (use this!)
-- **`Purple-NoZoom-v15.theme.css`** - Legacy backup (pre-rebrand)
+- **`Amethyst.theme.css`** - Main version with role colors (recommended)
+- **`Amethyst-WhiteText.theme.css`** - Pure white text variant
 - **`QUICK-START.md`** - Fast installation guide
 - **`CUSTOMIZATION-EXAMPLES.md`** - Advanced customization examples
 
 ## ⚠️ Known Issues
 
-Currently tracking these minor issues:
+*No major issues currently known. All Discord January 2026 update bugs have been fixed in v2.0.0!*
 
-- **Message hover effects removed** - Sacrificed for performance optimization (v1.1.0). If you prefer the hover effects over speed, use v1.0.0 from releases.
-- **Discord class changes** - Discord occasionally updates their CSS class names, which may temporarily break specific styling. Report via [GitHub Issues](https://github.com/lunagray932-ctrl/amethyst-discord-theme/issues) or email luna1324001@gmail.com.
+- **Discord class changes** - Discord occasionally updates their CSS class names, which may temporarily break specific styling. Report via [GitHub Issues](https://github.com/lunagray932-ctrl/amethyst-discord-theme/issues) or email luna1324001@gmail.com and fixes will be pushed within 24-48 hours.
 
-*No major bugs currently known. Theme tested on Discord Stable (January 2026).*
+*Theme tested on Discord Stable (January 2026).*
 
 ## 🔄 Version History
 
-### v1.1.0 "Performance" (Current - January 2026)
+### v2.0.0 "Compatibility Fix" (Current - January 23, 2026)
+- 🐛 **Fixed invisible mutual server icons** - Discord update broke inline background-image rendering
+- 🐛 **Fixed purple backgrounds in activity tab** - Removed from badges and labels
+- 🐛 **Fixed purple backgrounds on server tag emojis**
+- 🐛 **Fixed black boxes around member names**
+- 🎨 **Two variants available** - Role colors (default) and pure white text
+- 🔧 **Improved CSS specificity** - Added `:not([style*="background-image"])` exceptions to prevent future breaks
+- ✅ All visual issues from Discord's January 2026 update resolved
+
+### v1.1.0 "Performance" (January 2026)
 - ⚡ **Major performance optimization** - removed expensive CSS selectors
 - ⚡ Eliminated input lag during typing
 - ⚡ Improved folder opening speed
