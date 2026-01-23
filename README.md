@@ -1,11 +1,11 @@
 # Amethyst - Discord Theme
 
-![Version](https://img.shields.io/badge/version-1.1.3-purple?style=flat-square)
+![Version](https://img.shields.io/badge/version-2.0.0-purple?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 ![Discord](https://img.shields.io/badge/discord-theme-7C3AED?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-Vencord%20%7C%20BetterDiscord-blueviolet?style=flat-square)
 
-> **⚠️ KNOWN ISSUE:** Black boxes have reappeared on some UI elements after a recent Discord update. I'm aware of the issue and working on a fix. Thank you for your patience!
+> **✅ FIXED in v2.0.0:** Discord's January 2026 update caused invisible icons and purple backgrounds. All issues have been resolved! Download the latest version below. Two variants available: default (shows role colors) and WhiteText (pure white names).
 
 An elegant purple Discord theme with clean, transparent UI elements. Named after the beautiful purple gemstone, Amethyst brings a premium, minimal aesthetic to Discord without distracting effects.
 
@@ -38,6 +38,19 @@ https://github.com/user-attachments/assets/ecd37c2e-8734-4f6f-995e-6a9e26083bc1
 
 ## 📦 Installation
 
+### Choose Your Variant
+
+**Amethyst-V65.theme.css** (Recommended)
+- Shows Discord role colors on member names (pink, blue, green, etc.)
+- Better for servers with colored role hierarchy
+- [Download here](https://github.com/lunagray932-ctrl/amethyst-discord-theme/releases/latest)
+
+**Amethyst-V65-WhiteText.theme.css**
+- Forces all member names to pure white
+- Cleaner, more uniform appearance
+- Good if you prefer consistency over role colors
+- [Download here](https://github.com/lunagray932-ctrl/amethyst-discord-theme/releases/latest)
+
 ### Prerequisites
 Choose ONE of these Discord mods:
 - **[Vencord](https://vencord.dev/)** (Recommended - faster, more modern) OR
@@ -48,7 +61,7 @@ Choose ONE of these Discord mods:
 ### For Vencord Users
 
 1. **Download the theme file**
-   - Download `Amethyst.theme.css`
+   - Download your preferred variant from the links above
 
 2. **Open Vencord themes folder**
    - Open Discord
@@ -57,7 +70,7 @@ Choose ONE of these Discord mods:
    - Click "Open Themes Folder" button
 
 3. **Install the theme**
-   - Copy `Amethyst.theme.css` to the themes folder
+   - Copy the downloaded `.theme.css` file to the themes folder
    - Go back to Discord settings
    - Enable the theme in Vencord > Themes tab
 
@@ -67,7 +80,7 @@ Choose ONE of these Discord mods:
 ### For BetterDiscord Users
 
 1. **Download the theme file**
-   - Download `Amethyst.theme.css`
+   - Download your preferred variant from the links above
 
 2. **Open BetterDiscord themes folder**
    - Open Discord
@@ -76,7 +89,7 @@ Choose ONE of these Discord mods:
    - Click "Open Themes Folder" button
 
 3. **Install the theme**
-   - Copy `Amethyst.theme.css` to the themes folder
+   - Copy the downloaded `.theme.css` file to the themes folder
    - Go back to Discord settings
    - Enable the theme in the Themes tab
 
