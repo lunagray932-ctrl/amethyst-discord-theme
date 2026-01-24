@@ -315,7 +315,11 @@ span[class*="_10651c5cfe637db6"] {
 div.ce832809562bf737-statusItem,
 div.ce832809562bf737-status,
 [class~="ce832809562bf737-statusItem"],
-div[class*="statusItem"][class*="ce832809562bf737"] {
+div[class*="statusItem"][class*="ce832809562bf737"],
+div.statusItem_ce8328,
+div.status_ce8328,
+[class*="statusItem_ce8328"],
+[class*="status_ce8328"]:not([style*="background-color"]) {
     background: transparent !important;
     background-color: transparent !important;
     background-image: none !important;
