@@ -387,7 +387,20 @@ Found a purple/black box I missed? Discord updated and broke something? Have a f
 
 I'll add fixes quickly! Usually within 24-48 hours.
 
-## 📜 License
+## � Want a Different Theme?
+
+Have an idea for a completely different theme style (different colors, aesthetic, or concept)?
+
+**I'm open to creating new themes!** If there's enough community interest in a specific theme idea, I'll consider developing it as a separate project.
+
+**How to request:**
+1. [Open a GitHub issue](https://github.com/lunagray932-ctrl/amethyst-discord-theme/issues) or email luna1324001@gmail.com
+2. Describe the theme concept (colors, style, inspiration)
+3. If others are interested, they can upvote/comment on the issue
+
+If a theme request gets enough interest, I'll work on making it happen! 🎨
+
+## �📜 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
