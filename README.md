@@ -334,7 +334,12 @@ Absolutely! It's MIT licensed - free to use, modify, and redistribute. No attrib
 
 ## 🔄 Version History
 
-### v2.0.0 "Compatibility Fix" (Current - January 23, 2026)
+### v2.0.1 "Gradient Username Fix" (Current - January 24, 2026)
+- 🐛 **Fixed invisible gradient usernames** - Users with gradient username decorations now display correctly
+- 🔧 Added `:not()` exclusions to preserve `background-image` on gradient text elements
+- ✅ Theme no longer strips Discord's native gradient username styling
+
+### v2.0.0 "Compatibility Fix" (January 23, 2026)
 - 🐛 **Fixed invisible mutual server icons** - Discord update broke inline background-image rendering
 - 🐛 **Fixed purple backgrounds in activity tab** - Removed from badges and labels
 - 🐛 **Fixed purple backgrounds on server tag emojis**
