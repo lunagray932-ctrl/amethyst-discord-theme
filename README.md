@@ -303,7 +303,7 @@ No - you can only use one mod at a time. Choose either Vencord (recommended) or 
 Discord themes use CSS which occasionally needs updating when Discord changes their interface. I monitor for breaks and push fixes quickly (usually within 24-48 hours).
 
 ### Does this slow down Discord?
-v1.1.0 is optimized for performance. If you experience lag, email luna1324001@gmail.com - performance issues are top priority.
+The theme is optimized for performance. If you experience lag, email luna1324001@gmail.com - performance issues are top priority.
 
 ### Can I customize the purple color?
 Yes! See the [Customization](#-customization) section. Just replace `#7C3AED` with your preferred color in the theme file.
