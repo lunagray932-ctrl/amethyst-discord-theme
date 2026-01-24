@@ -1,5 +1,7 @@
 # Amethyst - Discord Theme
 
+![Amethyst Banner](banner.png)
+
 ![Version](https://img.shields.io/badge/version-2.0.0-purple?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 ![Discord](https://img.shields.io/badge/discord-theme-7C3AED?style=flat-square)
