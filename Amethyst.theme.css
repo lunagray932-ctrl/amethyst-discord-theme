@@ -332,8 +332,8 @@ div.status_ce8328,
 .leftName__20a53,
 .name__20a53,
 .name__703b9,
-.username__703b9,
-.desaturateUserColors__41f68,
+.username__703b9:not(.twoColorGradient_e5de78):not(.usernameGradient_e5de78):not(.convenienceGlowGradient_e5de78),
+.desaturateUserColors__41f68:not(.twoColorGradient_e5de78):not(.usernameGradient_e5de78):not(.convenienceGlowGradient_e5de78),
 [class*="anchor_edefb8"],
 .anchorUnderlineOnHover_edefb8,
 .interactive_bf202d,
@@ -356,18 +356,14 @@ div.nameAndDecorators__20a53,
 div.leftName__20a53,
 div.name__20a53,
 span.name__703b9,
-span.username__703b9,
-span.desaturateUserColors__41f68,
+span.username__703b9:not(.twoColorGradient_e5de78):not(.usernameGradient_e5de78):not(.convenienceGlowGradient_e5de78),
+span.desaturateUserColors__41f68:not(.twoColorGradient_e5de78):not(.usernameGradient_e5de78):not(.convenienceGlowGradient_e5de78),
 span.userName__0f2e8,
 div.userSection__0f2e8,
 div.infoSection__0f2e8,
 span.container__703b9,
 span.nameContainer__703b9,
-span.username__5d473,
-span.twoColorGradient_e5de78,
-span.usernameGradient_e5de78,
-span.nameGlow__703b9,
-span.usernameGlow_e5de78 {
+span.username__5d473:not(.twoColorGradient_e5de78):not(.usernameGradient_e5de78):not(.convenienceGlowGradient_e5de78) {
     background: none !important;
     background-color: rgba(0,0,0,0) !important;
     box-shadow: none !important;
@@ -375,6 +371,24 @@ span.usernameGlow_e5de78 {
     background-image: none !important;
     filter: none !important;
     text-shadow: none !important;
+}
+
+/* CRITICAL: Don't remove background-image from gradient usernames - they need it for the gradient effect */
+span.twoColorGradient_e5de78,
+span.usernameGradient_e5de78,
+span.convenienceGlowGradient_e5de78,
+span.username_c19a55.twoColorGradient_e5de78,
+span.username_c19a55.usernameGradient_e5de78,
+span[class*="username"][class*="Gradient"],
+span.nameGlow__703b9,
+span.usernameGlow_e5de78 {
+    /* Only remove backgrounds, NOT background-image (needed for gradient text) */
+    background-color: transparent !important;
+    box-shadow: none !important;
+    filter: none !important;
+    /* Ensure gradient works */
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
 }
 
 /* Remove nameplate backgrounds */
@@ -610,6 +624,16 @@ a:hover {
     -webkit-text-fill-color: currentColor !important;
     -webkit-text-stroke: 0 !important;
     text-shadow: none !important;
+}
+
+/* CRITICAL: Gradient usernames need -webkit-text-fill-color: transparent to show gradient */
+span.twoColorGradient_e5de78,
+span.usernameGradient_e5de78,
+span.convenienceGlowGradient_e5de78,
+span[class*="Gradient"] {
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
 }
 
 /* Force specific selectors for nameAndDecorators */
