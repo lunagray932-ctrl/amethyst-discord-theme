@@ -92,7 +92,7 @@ Choose ONE of these Discord mods:
 4. **Refresh Discord**
    - Press `Ctrl+R` to reload Discord and apply the theme
 
-## � Folder Organization (Optional)
+## 📁 Folder Organization (Optional)
 
 Want better server folder organization? Choose the plugin for YOUR Discord mod:
 
