@@ -2,16 +2,37 @@
 
 ![Amethyst Banner](banner.png)
 
+<div align="center">
+
 ![Version](https://img.shields.io/badge/version-2.0.1-purple?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 ![Discord](https://img.shields.io/badge/discord-theme-7C3AED?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-Vencord%20%7C%20BetterDiscord-blueviolet?style=flat-square)
 
-> **✅ FIXED in v2.0.0:** Discord's January 2026 update caused invisible icons and purple backgrounds. All issues have been resolved! Download the latest version below. Two variants available: default (shows role colors) and WhiteText (pure white names).
+### 💎 An elegant purple Discord theme with crystal-clear transparent UI
 
-An elegant purple Discord theme with clean, transparent UI elements. Named after the beautiful purple gemstone, Amethyst brings a premium, minimal aesthetic to Discord without distracting effects.
+**Zero clutter. Pure aesthetics. Stays out of your way.**
 
-## 📸 Preview
+[⚡ Quick Install](#-installation) • [✨ Features](#-features) • [🎨 Customize](#-customization) • [💬 Support](#-contributing--support)
+
+> ⭐ **Love Amethyst?** Star this repo to show your support and help others discover it!
+
+</div>
+
+---
+
+## 🚀 Why Amethyst?
+
+Unlike bloated themes that break with every Discord update, Amethyst is **built different**:
+
+✅ **Minimal & Fast** - Only touches colors/backgrounds, never breaks functionality  
+✅ **Always Updated** - Fixes pushed within 24-48 hours when Discord updates  
+✅ **Two Variants** - Choose role colors or pure white text  
+✅ **No Learning Curve** - Looks premium out of the box, customizable if you want  
+
+> **✅ FIXED in v2.0.1:** Discord's January 2026 update caused invisible gradient usernames. All issues resolved!
+
+## 📸 See It In Action
 
 ### Video Demo
 
@@ -23,31 +44,31 @@ https://github.com/user-attachments/assets/ecd37c2e-8734-4f6f-995e-6a9e26083bc1
 
 ## ✨ Features
 
-- **Circular Server Icons** - Smooth circular server icons with hover animations
-- **Clean Purple Scrollbar** - Gradient purple scrollbar for main areas, subtle gray for server list
-- **Transparent UI Elements** - No purple/black boxes on buttons, badges, or status indicators
-- **Normal Text Sizes** - No zoom or oversized text - everything stays readable
-- **Activity Panel Transparency** - Clean, transparent activity sections
-- **Profile Fixes** - No purple boxes on badges, no black boxes on custom status/emoji
-- **Type Bar Visible Icons** - All input bar buttons clearly visible with proper contrast
-- **Music Player Natural Styling** - Shows purple progress without breaking layout
-- **Minimal Layout Changes** - Only styles colors and backgrounds, preserves Discord's native behavior
-- **Server Tag Emoji Support** - No purple boxes around server tag badges/emoji
+**Visual Polish:**
+- 🔮 **Circular Server Icons** with smooth hover animations
+- 📜 **Purple Gradient Scrollbar** (main areas) + subtle gray (server list)
+- 🎯 **Zero Background Boxes** - Clean, transparent UI throughout
+- 💬 **Readable Text** - Normal sizes, no zoom or oversized fonts
+
+**Smart Fixes:**
+- 🎵 **Music Player Integration** - Purple progress bars without breaking layout
+- 🏷️ **Tag & Badge Support** - No purple/black boxes on emojis or status
+- ⌨️ **Clear Input Icons** - All buttons visible with proper contrast
+- 🎨 **Role Colors Preserved** - Shows Discord's native color hierarchy (default variant)
+
+**Under the Hood:**
+- ⚡ **Performance Optimized** - No expensive CSS selectors
+- 🔧 **Minimal Overrides** - Preserves Discord's native behavior
+- 🔄 **Quick Updates** - Fixes pushed when Discord changes their UI
 
 ## 📦 Installation
 
 ### Choose Your Variant
 
-**Amethyst.theme.css** (Recommended)
-- Shows Discord role colors on member names (pink, blue, green, etc.)
-- Better for servers with colored role hierarchy
-- [Download here](https://github.com/lunagray932-ctrl/amethyst-discord-theme/releases/latest)
-
-**Amethyst-WhiteText.theme.css**
-- Forces all member names to pure white
-- Cleaner, more uniform appearance
-- Good if you prefer consistency over role colors
-- [Download here](https://github.com/lunagray932-ctrl/amethyst-discord-theme/releases/latest)
+| Variant | Best For | Download |
+|---------|----------|----------|
+| **Amethyst** *(Recommended)* | Shows role colors (pink, blue, green) on member names | [⬇️ Download](https://github.com/lunagray932-ctrl/amethyst-discord-theme/releases/latest) |
+| **Amethyst WhiteText** | Pure white names - cleaner, uniform look | [⬇️ Download](https://github.com/lunagray932-ctrl/amethyst-discord-theme/releases/latest) |
 
 ### Prerequisites
 Choose ONE of these Discord mods:
